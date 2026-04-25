@@ -1,5 +1,9 @@
 import Header from "../Header"
-
+import Carousel from "../Carousel"
+import StatsCards from "../StatsCards"
+import PitStopProtocol from "../PitStopProtocol"
+import ServerRoomSection from "../ServerRoomSection"
+import { Link } from "react-router-dom/cjs/react-router-dom.min"
 import './index.css'
 
 const Home = () => {
@@ -8,41 +12,11 @@ const Home = () => {
       {/* Navbar */}
       <Header />
 
-      {/* Hero Section */}
-      <section className="hero-section" id="home">
-        <div className="hero-content">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="https://res.cloudinary.com/doyaebals/image/upload/v1777033797/GTAPEX_FLYER_j4pvja.png" class="d-block w-100" alt="..."/>
-                </div>
-                <div class="carousel-item">
-                  <img src="" class="d-block w-100" alt="..."/>
-                </div>
-                <div class="carousel-item">
-                  <img src="" class="d-block w-100" alt="..."/>
-                </div>
-              </div>
-            </div>
-            <p className="hero-tag">360° Digital Marketing Agency</p>
-          <h1>
-            Full Throttle <br />
-            <span>For Brands</span> <br />
-            That Don’t Settle
-          </h1>
-
-          <p className="hero-description">
-            We engineer your marketing like a race-spec machine — precision strategy,
-            creative campaigns, and measurable performance.
-          </p>
-
-          <div className="hero-buttons">
-            <button className="primary-btn">Work With Us</button>
-            <button className="secondary-btn">Explore Services</button>
-          </div>
-        </div>
-      </section>
-
+      {/* Full Width Carousel */}
+      <Carousel />
+      <StatsCards /> 
+      <PitStopProtocol />
+      <ServerRoomSection />
       {/* Services Section */}
       <section className="services-section" id="services">
         <div className="section-title">
@@ -76,8 +50,50 @@ const Home = () => {
       {/* CTA Section */}
       <section className="cta-section">
         <h2>Ready To Grow Your Brand?</h2>
-        <button className="primary-btn">Let's Talk</button>
+        <Link to="/contact">
+           <button className="primary-btn">Let's connect</button>
+         </Link>
       </section>
+      {/* Footer Section */}
+      <footer className="footer-section">
+        <div className="footer-container">
+          <div className="footer-brand">
+            <h2>GTApex Marketing</h2>
+            <p>
+              We build precision marketing systems that drive growth,
+              performance, and measurable results.
+            </p>
+          </div>
+
+            <div className="footer-links">
+              <h3>Pages</h3>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+              </ul>
+            </div>
+
+            <div className="footer-contact">
+              <h3>Services</h3>
+              <p>Strategy & Branding</p>
+              <p>Search & Performance</p>
+              <p>Social & Engagement</p>
+              <p>Content & Creative</p>
+            </div>
+            <div className="footer-contact">
+              <h3>Get Started</h3>
+              <p>Free Brand Audit</p>
+              <p>Email: hello@gtapex.com</p>
+              <p>Phone: +91 98765 43210</p>
+              <p>India</p>
+            </div>
+          </div>
+
+          <div className="footer-bottom">
+            <p>© 2026 GTApex Marketing. All Rights Reserved.</p>
+          </div>
+        </footer>
     </div>
   )
 }
