@@ -151,10 +151,7 @@
   }
 
   /* Hide Contact Text */
-  .contact-text {
-    display: none;
-  }
-
+  
   .nav-btn {
     padding: 6px 10px;
     min-width: 36px;
