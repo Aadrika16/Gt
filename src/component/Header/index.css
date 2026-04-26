@@ -45,11 +45,6 @@
   transition: color 0.3s ease;
 }
 
-/* Default White */
-.nav-links li a {
-  color: white;
-}
-
 /* Underline Hidden by Default */
 .nav-links li a::after {
   content: "";
@@ -92,11 +87,12 @@
   color: #fff;
   text-transform: uppercase;
 }
-.nav-text:hover{
+
+.nav-text:hover {
   color: #00fc40;
 }
+
 /* Contact Button */
-        /* reduced height */
 .nav-btn {
   height: 36px;
   width: 110px;
@@ -107,16 +103,21 @@
   text-decoration: none;
   transition: 0.3s ease;
   padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.contact-text{
+
+.contact-text {
   font-size: 15px;
+  color: #0e0e0e;
 }
+
 .nav-btn:hover {
   background: #1b5e20;
 }
 
-
-.contact-text:hover{
+.contact-text:hover {
   color: #0e0e0e;
 }
 
@@ -132,7 +133,7 @@
     max-height: 60px;
   }
 
-  /* Hide Text */
+  /* Hide Nav Text */
   .nav-text {
     display: none;
   }
@@ -143,19 +144,30 @@
     color: #fff;
     font-size: 22px;
   }
-  .nav-icon:hover{
+
+  .nav-icon:hover {
     color: #00fc40;
   }
+
   .nav-links {
     gap: 20px;
   }
 
-  /* Hide Contact Text */
-  
+  /* Mobile Button Fix */
   .nav-btn {
-    padding: 6px 10px;
-    min-width: 36px;
-    min-height: 36px;
-    height: 36px;
+    width: auto;
+    min-width: 90px;
+    height: 38px;
+    padding: 8px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-text {
+    display: inline;
+    font-size: 13px;
+    color: #0e0e0e;
+    white-space: nowrap;
   }
 }
