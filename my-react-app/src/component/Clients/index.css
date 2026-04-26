@@ -1,0 +1,147 @@
+.clients-page {
+  background-color: #0e0e0e;
+  min-height: 100vh;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Hero */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 120px 8%;
+  gap: 40px;
+}
+
+.hero-left {
+  max-width: 700px;
+}
+
+.hero-tag {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 0.9;
+  margin-bottom: 20px;
+}
+
+.hero-title span {
+  display: block;
+  color: #00ff41;
+}
+
+.hero-description {
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 550px;
+  line-height: 1.8;
+}
+
+.hero-stat {
+  background-color: #161616;
+  border-left: 4px solid #00ff41;
+  padding: 30px;
+  min-width: 250px;
+}
+
+.hero-stat p {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 10px;
+}
+
+.hero-stat h2 {
+  font-size: 52px;
+  color: #00ff41;
+}
+
+/* Case Studies */
+.case-study-section {
+  padding: 80px 8%;
+}
+
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.case-card {
+  background-color: #151515;
+  padding: 40px;
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: 0.3s ease;
+}
+
+.case-card:hover {
+  background-color: #1d1d1d;
+  transform: translateY(-5px);
+}
+
+.case-id {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: rgba(255,255,255,0.4);
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.case-card h3 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.stat-box h2 {
+  color: #00ff41;
+  font-size: 52px;
+  margin-bottom: 5px;
+}
+
+.stat-box span {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: rgba(255,255,255,0.5);
+}
+
+.case-desc {
+  margin: 30px 0;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.7;
+}
+
+.report-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.report-btn:hover {
+  color: #00ff41;
+}
+
+/* Responsive */
+@media screen and (max-width: 992px) {
+  .hero-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .case-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-title {
+    font-size: 50px;
+  }
+}

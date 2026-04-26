@@ -1,0 +1,70 @@
+/* StatsCards.css */
+
+.stats-section {
+  background-color: #0b0b0b;
+  padding: 60px 8%;
+}
+
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 30px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  backdrop-filter: blur(8px);
+  transition: 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  border-color: #9cff93;
+}
+
+.line {
+  width: 4px;
+  height: 70px;
+  background: linear-gradient(180deg, #d9ff91, #7fff5e);
+}
+
+.stat-content h2 {
+  color: #7ed957;
+  font-size: 42px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.stat-content p {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-top: 8px;
+}
+
+/* Tablet */
+@media screen and (max-width: 992px) {
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .stats-container {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-card {
+    padding: 20px;
+  }
+
+  .stat-content h2 {
+    font-size: 32px;
+  }
+}
