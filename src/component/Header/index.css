@@ -1,0 +1,164 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 4%;
+  min-height: 90px;
+  background-color: #0e0e0e;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  width: 220px;
+  height: auto;
+  max-height: 150px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav Link */
+.nav-links li a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Default White */
+.nav-links li a {
+  color: white;
+}
+
+/* Underline Hidden by Default */
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background-color: #2e7d32;
+  transition: width 0.3s ease;
+}
+
+/* Hover Effect */
+.nav-links li a:hover {
+  color: #2e7d32;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+/* Active Link */
+.active-link {
+  color: #2e7d32 !important;
+}
+
+.active-link::after {
+  width: 100%;
+}
+
+/* Desktop */
+.nav-icon {
+  display: none;
+}
+
+.nav-text {
+  display: inline;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.nav-text:hover{
+  color: #00fc40;
+}
+/* Contact Button */
+        /* reduced height */
+.nav-btn {
+  height: 36px;
+  width: 110px;
+  font-size: 13px;
+  border-radius: 5px;
+  background: linear-gradient(107.08deg, #9cff93 0%, #00fc40 100%);
+  color: #0e0e0e;
+  text-decoration: none;
+  transition: 0.3s ease;
+  padding: 10px;
+}
+.contact-text{
+  font-size: 15px;
+}
+.nav-btn:hover {
+  background: #1b5e20;
+}
+
+
+.contact-text:hover{
+  color: #0e0e0e;
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 12px 5%;
+    min-height: 70px;
+  }
+
+  .logo-icon {
+    width: 150px;
+    max-height: 60px;
+  }
+
+  /* Hide Text */
+  .nav-text {
+    display: none;
+  }
+
+  /* Show Icons */
+  .nav-icon {
+    display: block;
+    color: #fff;
+    font-size: 22px;
+  }
+  .nav-icon:hover{
+    color: #00fc40;
+  }
+  .nav-links {
+    gap: 20px;
+  }
+
+  /* Hide Contact Text */
+  .contact-text {
+    display: none;
+  }
+
+  .nav-btn {
+    padding: 6px 10px;
+    min-width: 36px;
+    min-height: 36px;
+    height: 36px;
+  }
+}

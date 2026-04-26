@@ -1,0 +1,139 @@
+/* PitStopProtocol.css */
+
+.pitstop-section {
+  background-color: #0b0b0b;
+  padding: 4px 3%;
+  color: white;
+}
+
+.pitstop-container {
+  padding: 60px;
+  background: linear-gradient(to bottom, #111, #0b0b0b);
+}
+
+.pitstop-header {
+  margin-bottom: 70px;
+}
+
+.pitstop-header h2 {
+  font-size: 54px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.pitstop-header h2 span {
+  color: #c8ff85;
+}
+
+.pitstop-header p {
+  max-width: 650px;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.8;
+}
+
+.pitstop-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.pit-card {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 40px 30px;
+  min-height: 350px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s ease;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.pit-card:hover {
+  transform: translateY(-6px);
+  border-color: #9cff93;
+}
+
+.pit-icon {
+  font-size: 30px;
+  color: #9cff93;
+  align-self: flex-end;
+  margin-bottom: 30px;
+}
+
+.pit-card h3 {
+  font-size: 56px;
+  color: rgba(255,255,255,0.25);
+  margin-bottom: 15px;
+}
+
+.pit-card h4 {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.pit-card p {
+  color: rgba(255,255,255,0.6);
+  line-height: 1.8;
+  font-size: 15px;
+}
+h2{
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.4px;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+}
+span{
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 48px;
+    line-height: 1.4;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.pitstop-header h2 span {
+  color: #c8ff85;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* Tablet */
+@media screen and (max-width: 992px) {
+  .pitstop-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .pitstop-container {
+    padding: 30px;
+  }
+
+  .pitstop-header h2 {
+    font-size: 38px;
+  }
+
+  .pitstop-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pit-card {
+    min-height: auto;
+  }
+}
