@@ -1,57 +1,9 @@
-
 .footer-wrapper {
   background: #0b0b0b;
   color: white;
   width: 100%;
   min-height: 100vh;
   font-family: Arial, sans-serif;
-}
-
-/* CTA Section */
-.cta-section {
-  text-align: center;
-  padding: 100px 20px 60px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.cta-title {
-  
-  font-size: 30px;
-  font-weight: 200;
-  line-height: 1.3;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-  text-align: center;
-
-}
-
-.cta-title span {
-  color: #b6ff4d;
-  font-size: 30px;
-  font-weight: 200;
-
-}
-.cta-span{
-  line-height: 1.5;
-  padding-bottom: 10px;
-}
-.cta-btn {
-  background: linear-gradient(90deg, #c8ff53, #9cff00);
-  color: black;
-  border: none;
-  border-radius: 50px;
-  font-size: 16px;
-  height: 50px; 
-  width: 200px;
-  cursor: pointer;
-  margin-top: 30px;
-  box-shadow: 0 0 25px rgba(180, 255, 0, 0.4);
-}
-
-.cta-btn:hover {
-  background-color:#b6ff4d;
-  height: 40px;
-  width: 200px;
 }
 
 /* Footer */
@@ -69,7 +21,7 @@
 .footer-column h2,
 .footer-column h3 {
   margin-bottom: 20px;
-  color: white;
+  color: #00cc66;
 }
 
 .footer-logo {
@@ -79,7 +31,7 @@
 
 .footer-column p {
   color: #bdbdbd;
-  line-height: 1.8;
+  line-height: 1.5;
   font-size: 14px;
   margin-bottom: 10px;
 }
@@ -103,86 +55,137 @@
 /* Bottom Footer */
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
-  padding-top: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; 
-  flex-wrap: wrap;
-  gap: 20px;
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  width: 100%;
 }
-.first-text-con{
-  display: flex;
-  flex-direction: column;
+
+/* Left Text */
+.first-text-con {
+  justify-self: start;
+  text-align: left;
 }
+
+/* Middle Text */
+.footer-middle-text {
+  justify-self: center;
+  text-align: center;
+  font-size: 11px;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+/* Right Icons */
+.social-icons {
+  justify-self: end;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Bottom Text */
 .footer-bottom p {
   color: #999;
-  font-size: 13px;
+  font-size: 11px;
+  margin: 0;
 }
 
+/* Footer Links */
 .footer-links {
   display: flex;
-  gap: 12px;
-  font-size: 11px;   /* smaller text */
-  color: #ffffff;    /* white */
-
-}
-.footer-middle-text{
-  font-size: 16px;
-  font-weight: none;
+  gap: 10px;
+  font-size: 10px;
   color: #ffffff;
+  margin-top: 5px;
+  margin-left: 30px;
 }
+
 .footer-links span {
   cursor: pointer;
 }
 
-.footer-links span:hover {
-  color: #b6ff4d;
-}
-
-.social-icons {
-  display: flex;
-  gap: 15px;
-  font-size: 18px;
+/* Social Icons */
+.each-icon {
+  width: 22px;
+  height: 22px;
   cursor: pointer;
 }
-.each-icon{
-  height: 40px; 
-  width: 40px;
-  margin-left: 10px;
+.first-bottom-text{
+  font-size: 28px;
 }
-/* Responsive */
+/* Tablet */
 @media screen and (max-width: 992px) {
   .footer-grid {
     grid-template-columns: 1fr 1fr;
   }
-
-  .cta-title {
-    font-size: 42px;
-  }
 }
 
+/* Mobile */
 @media screen and (max-width: 768px) {
+  .footer-container {
+    padding: 40px 5%;
+  }
+
   .footer-grid {
     grid-template-columns: 1fr;
     text-align: center;
+    gap: 35px;
   }
 
   .footer-bottom {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .first-text-con,
+  .footer-middle-text,
+  .social-icons {
+    justify-self: center;
     text-align: center;
   }
 
   .footer-links {
-    flex-direction: column;
-    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
-  .cta-title {
-    font-size: 32px;
+  .social-icons {
+    gap: 12px;
   }
 
-  .cta-btn {
-    width: 220px;
+  .each-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Small Mobile */
+@media screen and (max-width: 480px) {
+  .footer-logo {
+    font-size: 24px;
+  }
+
+  .footer-column h2,
+  .footer-column h3 {
+    font-size: 18px;
+  }
+
+  .footer-column p,
+  .footer-column ul li {
+    font-size: 12px;
+  }
+
+  .footer-bottom p,
+  .footer-middle-text,
+  .footer-links {
+    font-size: 9px;
+  }
+
+  .each-icon {
+    width: 18px;
+    height: 18px;
   }
 }

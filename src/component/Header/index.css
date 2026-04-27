@@ -1,12 +1,27 @@
+/* Prevent content hiding under fixed navbar */
+body {
+  padding-top: 10vh; /* same as navbar height */
+  margin: 0;
+}
+
 /* Navbar */
 .navbar {
+  position: fixed;   /* 🔥 keeps navbar fixed on scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 4%;
-  min-height: 90px;
-  background-color: #0e0e0e;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  height: 10vh;
+
+  background-image: linear-gradient(to right, #0e0e0e, #006413);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+
+  z-index: 1000;
+  backdrop-filter: blur(8px); /* 🔥 premium effect */
 }
 
 /* Logo */
@@ -45,7 +60,7 @@
   transition: color 0.3s ease;
 }
 
-/* Underline Hidden by Default */
+/* Underline Animation */
 .nav-links li a::after {
   content: "";
   position: absolute;
@@ -53,13 +68,13 @@
   bottom: -6px;
   width: 0;
   height: 2px;
-  background-color: #2e7d32;
+  background-color: #00fc40;
   transition: width 0.3s ease;
 }
 
 /* Hover Effect */
 .nav-links li a:hover {
-  color: #2e7d32;
+  color: #00fc40;
 }
 
 .nav-links li a:hover::after {
@@ -68,14 +83,14 @@
 
 /* Active Link */
 .active-link {
-  color: #2e7d32 !important;
+  color: #00fc40 !important;
 }
 
 .active-link::after {
   width: 100%;
 }
 
-/* Desktop */
+/* Desktop Text */
 .nav-icon {
   display: none;
 }
@@ -97,9 +112,9 @@
   height: 36px;
   width: 110px;
   font-size: 13px;
-  border-radius: 5px;
-  background: linear-gradient(107.08deg, #9cff93 0%, #00fc40 100%);
-  color: #0e0e0e;
+  border-radius: 20px;
+  background-color: #0e0e0e;
+  color: #fff;
   text-decoration: none;
   transition: 0.3s ease;
   padding: 10px;
@@ -110,14 +125,15 @@
 
 .contact-text {
   font-size: 15px;
-  color: #0e0e0e;
+  color: #fff;
+  margin-top: 10px;
 }
 
 .nav-btn:hover {
-  background: #1b5e20;
+  background: #00fc40;
 }
 
-.contact-text:hover {
+.nav-btn:hover .contact-text {
   color: #0e0e0e;
 }
 
@@ -153,21 +169,16 @@
     gap: 20px;
   }
 
-  /* Mobile Button Fix */
+  /* Mobile Button */
   .nav-btn {
     width: auto;
     min-width: 90px;
     height: 38px;
     padding: 8px 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   .contact-text {
-    display: inline;
     font-size: 13px;
-    color: #0e0e0e;
     white-space: nowrap;
   }
 }
