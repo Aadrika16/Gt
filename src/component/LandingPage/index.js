@@ -9,7 +9,7 @@ const Hero = () => {
         {/* LEFT IMAGE */}
         <div className="hero-image">
           <img
-            src="https://res.cloudinary.com/doyaebals/image/upload/v1777118752/GTAPEX_FLYER2_qch8eq.svg"
+            src="https://res.cloudinary.com/doyaebals/image/upload/v1777292814/WhatsApp_Image_2026-04-27_at_5.54.48_PM_szf6jn.jpg"
             alt="Marketing Banner"
           />
         </div>

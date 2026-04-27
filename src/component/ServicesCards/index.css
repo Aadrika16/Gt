@@ -1,7 +1,7 @@
 .services {
   background: #0a0a0a;
-  color: #fff;
-  padding: 80px 20px;
+  color: white;
+  padding: 60px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -33,7 +33,7 @@
 
 .desc {
   max-width: 400px;
-  color: #aaa;
+  color: white;
   font-size: 14px;
   border-left: 2px solid #00ff88;
   padding-left: 15px;
@@ -65,7 +65,7 @@
 .service-card  .dot{
   width: 6px;
   height: 6px;
-  background: #00ff88;
+  background: white;
   border-radius: 50%;
   transition: 0.3s;
 }
@@ -79,10 +79,12 @@
 /* HOVER EFFECT */
 p:hover {
   color :#00ff88 !important;
+  
 }
 
 .service-card:hover .dot {
   transform: scale(1.5);
+  background: #00ff88;
 }
 
 /* CLICK EFFECT */

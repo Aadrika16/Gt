@@ -64,7 +64,7 @@ const Pricing = () => {
         CHOOSE YOUR <span>RETAINER PLAN</span>
       </h2>
       <p className="sub-text">
-        ⭐ Medium plan is most popular among our retail clients
+        Medium plan is most popular among our retail clients
       </p>
 
       {/* PLANS */}
