@@ -8,7 +8,7 @@ import About from './component/About'
 
 function App() {
   return (
-    <BrowserRouter basename="/Gt">
+    <BrowserRouter>
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/services" component = {Services} />

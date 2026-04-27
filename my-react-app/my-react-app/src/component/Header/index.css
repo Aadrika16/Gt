@@ -1,27 +1,12 @@
-/* Prevent content hiding under fixed navbar */
-body {
-  padding-top: 10vh; /* same as navbar height */
-  margin: 0;
-}
-
 /* Navbar */
 .navbar {
-  position: fixed;   /* 🔥 keeps navbar fixed on scroll */
-  top: 0;
-  left: 0;
-  width: 100%;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 4%;
-  height: 10vh;
-
-  background-image: linear-gradient(to right, #0e0e0e, #006413);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-
-  z-index: 1000;
-  backdrop-filter: blur(8px); /* 🔥 premium effect */
+  min-height: 90px;
+  background-color: #0e0e0e;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
 /* Logo */
@@ -60,7 +45,12 @@ body {
   transition: color 0.3s ease;
 }
 
-/* Underline Animation */
+/* Default White */
+.nav-links li a {
+  color: white;
+}
+
+/* Underline Hidden by Default */
 .nav-links li a::after {
   content: "";
   position: absolute;
@@ -68,13 +58,13 @@ body {
   bottom: -6px;
   width: 0;
   height: 2px;
-  background-color: #00fc40;
+  background-color: #2e7d32;
   transition: width 0.3s ease;
 }
 
 /* Hover Effect */
 .nav-links li a:hover {
-  color: #00fc40;
+  color: #2e7d32;
 }
 
 .nav-links li a:hover::after {
@@ -83,14 +73,14 @@ body {
 
 /* Active Link */
 .active-link {
-  color: #00fc40 !important;
+  color: #2e7d32 !important;
 }
 
 .active-link::after {
   width: 100%;
 }
 
-/* Desktop Text */
+/* Desktop */
 .nav-icon {
   display: none;
 }
@@ -102,38 +92,31 @@ body {
   color: #fff;
   text-transform: uppercase;
 }
-
-.nav-text:hover {
+.nav-text:hover{
   color: #00fc40;
 }
-
 /* Contact Button */
+        /* reduced height */
 .nav-btn {
   height: 36px;
   width: 110px;
   font-size: 13px;
-  border-radius: 20px;
-  background-color: #0e0e0e;
-  color: #fff;
+  border-radius: 5px;
+  background: linear-gradient(107.08deg, #9cff93 0%, #00fc40 100%);
+  color: #0e0e0e;
   text-decoration: none;
   transition: 0.3s ease;
   padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-
-.contact-text {
+.contact-text{
   font-size: 15px;
-  color: #fff;
-  margin-top: 10px;
 }
-
 .nav-btn:hover {
-  background: #00fc40;
+  background: #1b5e20;
 }
 
-.nav-btn:hover .contact-text {
+
+.contact-text:hover{
   color: #0e0e0e;
 }
 
@@ -149,7 +132,7 @@ body {
     max-height: 60px;
   }
 
-  /* Hide Nav Text */
+  /* Hide Text */
   .nav-text {
     display: none;
   }
@@ -160,25 +143,22 @@ body {
     color: #fff;
     font-size: 22px;
   }
-
-  .nav-icon:hover {
+  .nav-icon:hover{
     color: #00fc40;
   }
-
   .nav-links {
     gap: 20px;
   }
 
-  /* Mobile Button */
-  .nav-btn {
-    width: auto;
-    min-width: 90px;
-    height: 38px;
-    padding: 8px 14px;
+  /* Hide Contact Text */
+  .contact-text {
+    display: none;
   }
 
-  .contact-text {
-    font-size: 13px;
-    white-space: nowrap;
+  .nav-btn {
+    padding: 6px 10px;
+    min-width: 36px;
+    min-height: 36px;
+    height: 36px;
   }
 }

@@ -8,6 +8,15 @@ import './index.css'
 const FooterSection = () => {
   return (
     <div className="footer-wrapper">
+      {/* CTA Section */}
+      <section className="cta-section">
+        <h1 className="cta-title">
+          READY TO <span className='cta-span'>OUTPACE</span>  <br />
+           THE COMPETITION?
+        </h1>
+
+        <button className="cta-btn">OUR SERVICES</button>
+      </section>
 
       {/* Footer */}
       <footer className="footer-container">
@@ -44,7 +53,9 @@ const FooterSection = () => {
           <div className="footer-column">
             <h3>Company</h3>
             <ul>
+              <li>Press</li>
               <li>Contact Us</li>
+              <li>Careers</li>
               <li>Portfolio</li>
             </ul>
           </div>
