@@ -32,7 +32,6 @@ const Hero = () => {
 
           <div className="features">
             <div className="feature">
-              <span className="icon">👁</span>
               <div>
                 <h4>MARKET INSIGHT</h4>
                 <p>Real-time telemetry of your market landscape.</p>
@@ -40,7 +39,6 @@ const Hero = () => {
             </div>
 
             <div className="feature">
-              <span className="icon">⚙️</span>
               <div>
                 <h4>GROWTH ENGINE</h4>
                 <p>Proprietary logic designed for aggressive expansion.</p>

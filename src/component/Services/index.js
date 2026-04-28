@@ -12,8 +12,8 @@ const LandingPage = () => {
           <span className="status-badge">SYSTEM STATUS : OPTIMAL</span>
 
           <h1>
-            ZERO DRAG.<br />
-            <span>MAXIMUM ROI.</span>
+            ZERO DRAG<br />
+            <span>MAXIMUM ROI</span>
           </h1>
 
           <p>
@@ -29,14 +29,13 @@ const LandingPage = () => {
             </div>
 
             <div className="stat-card">
-              <h2>0ms</h2>
+              <h2>0 <span>ms</span></h2>
               <span>DEPLOYMENT LATENCY</span>
             </div>
           </div>
         </div>
 
         <div className="hero-right">
-          <div className="circle-effect"></div>
         </div>
       </section>
 
@@ -123,7 +122,7 @@ const LandingPage = () => {
         <div className="bottom-section">
           <div className="bottom-left">
             <small>MODULE 06</small>
-            <h3>ECOMMERCE GROWTH ENGINES</h3>
+            <h4>ECOMMERCE <br /> GROWTH ENGINES</h4>
             <p>
               Turn-key commerce frameworks designed for rapid scaling.
             </p>

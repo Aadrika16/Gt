@@ -1,5 +1,4 @@
 import Header from "../Header"
-import Carousel from "../Carousel"
 import StatsCards from "../StatsCards"
 import PitStopProtocol from "../PitStopProtocol"
 import LandingPage from "../LandingPage"
@@ -15,9 +14,10 @@ const Home = () => {
     <div className="home-container">
       {/* Navbar */}
       <Header />
+      <div className="bg-con"> 
 
+      </div>
       {/* Full Width Carousel */}
-      <Carousel />
       <StatsCards />
       <LandingPage />
       <ServicesCards />
