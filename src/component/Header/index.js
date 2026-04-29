@@ -10,10 +10,18 @@ import {
 } from "react-icons/fa"
 
 import "./index.css"
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min"
 
 const Header = () => {
   const location = useLocation()
+  const history = useHistory()
   const [open, setOpen] = useState(false)
+
+  const onClickToContact = () =>{
+     history.push('/contact')
+    setOpen(false)
+
+  }
 
   return (
     <header className="header">
@@ -39,25 +47,25 @@ const Header = () => {
         </li>
 
         <li>
-          <Link to="/services">
+          <Link to="/services" className={location.pathname === "/services" ? "active" : ""}>
             <FaServicestack /> Services
           </Link>
         </li>
 
         <li>
-          <Link to="/about">
+          <Link to="/about" className={location.pathname === "/about" ? "active" : ""}>
             <FaInfoCircle /> About
           </Link>
         </li>
 
         <li>
-          <Link to="/clients">
+          <Link to="/clients" className={location.pathname === "/clients" ? "active" : ""}>
             <FaUsers /> Clients
           </Link>
         </li>
 
         <li>
-          <button className="btn">BOOK NOW</button>
+          <button className="btn" onClick={onClickToContact}>BOOK NOW</button>
         </li>
       </ul>
     </header>

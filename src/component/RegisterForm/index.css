@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.register-page {
+  min-height: 100vh;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.register-card {
+  width: 100%;
+  max-width: 900px;
+  background: #6d726d;
+  border-radius: 50px;
+  padding: 60px 70px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.register-title {
+  color: white;
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  color: #d4d4d4;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.input-group input,
+.input-group textarea {
+  background: #151515;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 20px 25px;
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+  color: #555;
+  letter-spacing: 1px;
+}
+
+.input-group textarea {
+  min-height: 140px;
+  resize: none;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  height: 85px;
+  border: none;
+  border-radius: 28px;
+  font-size: 22px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #006413;
+  box-shadow: 0 0 30px rgba(65, 66, 66, 0.6);
+  transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 40px rgba(0, 255, 85, 0.8);
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .register-card {
+    padding: 50px 35px;
+    border-radius: 35px;
+  }
+
+  .register-title {
+    font-size: 36px;
+  }
+
+  .input-group input,
+  .input-group textarea {
+    font-size: 18px;
+    padding: 18px;
+  }
+
+  .submit-btn {
+    height: 70px;
+    font-size: 18px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .register-card {
+    padding: 35px 20px;
+    border-radius: 30px;
+  }
+
+  .register-title {
+    font-size: 28px;
+    margin-bottom: 35px;
+  }
+
+  .input-group label {
+    font-size: 12px;
+  }
+
+  .input-group input,
+  .input-group textarea {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .submit-btn {
+    height: 65px;
+    font-size: 16px;
+    border-radius: 20px;
+  }
+}
+

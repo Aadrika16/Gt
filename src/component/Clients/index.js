@@ -1,3 +1,4 @@
+import Header from '../Header'
 import './index.css'
 
 const Clients = () => {
@@ -30,6 +31,7 @@ const Clients = () => {
 
   return (
     <div className="clients-page">
+      <Header />
       <section className="hero-section">
         <div className="hero-left">
           <p className="hero-tag">Client Portfolio // 2024</p>

@@ -1,6 +1,11 @@
+import RegisterForm  from "../RegisterForm"
+
 const Contact = () =>{
     return (
-        <h1>Hi</h1>
+        <div>
+            <h1>Contact Us</h1>
+            <RegisterForm />
+        </div>
     )
 }
 export default Contact

@@ -1,7 +1,7 @@
 .services {
   background: #0a0a0a;
   color: white;
-  padding: 60px;
+  padding: 60px 20px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -33,62 +33,63 @@
 
 .desc {
   max-width: 400px;
-  color: white;
+  color: #ccc;
   font-size: 14px;
   border-left: 2px solid #00ff88;
   padding-left: 15px;
 }
 
 /* GRID */
-/* GRID */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(220px, 1fr));
-  gap: 0;
-  justify-content: center;
-  border-top: 1px solid #222;
-  border-left: 1px solid #222;
+  gap: 15px; /* ✅ spacing added */
+  max-width: 1200px;
+  margin: auto;
 }
 
 /* CARD */
 .service-card {
-  padding: 14px 16px; /* smaller height + width */
-  height: 50px;   /* reduced card height */
-  border-right: 1px solid #222;
-  border-bottom: 1px solid #222;
+  padding: 14px 16px;
+  height: 60px;
+  border-radius: 8px;
   cursor: pointer;
-  background-color: #201f1f !important;
+  background-color: #201f1f;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   transition: all 0.3s ease;
-  position: relative;
+  border: 1px solid #222;
 }
 
 /* DOT */
-.service-card  .dot{
+.service-card .dot {
   width: 6px;
   height: 6px;
-  color: white;
-  margin-top: 10px;
   background: white;
   border-radius: 50%;
   transition: 0.3s;
+  margin-top: 10px;
 }
 
 /* TEXT */
 .service-card p {
   font-size: 13px;
   letter-spacing: 0.5px;
-  color: #ffffff !important;
+  color: #ffffff;
   margin: 0;
   transition: color 0.3s ease;
 }
 
 /* HOVER EFFECT */
-p:hover {
-  color :#00ff88 !important;
-  
+.service-card:hover {
+  transform: translateY(-3px);
+  border-color: #00ff88;
+  box-shadow: 0 5px 15px rgba(0, 255, 136, 0.1);
+}
+
+.service-card:hover p {
+  color: #00ff88;
 }
 
 .service-card:hover .dot {
@@ -101,7 +102,10 @@ p:hover {
   transform: scale(0.97);
 }
 
+/* ========================= */
 /* RESPONSIVE */
+/* ========================= */
+
 @media (max-width: 900px) {
   .services-header {
     flex-direction: column;

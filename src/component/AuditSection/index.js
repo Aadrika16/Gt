@@ -5,11 +5,11 @@ const AuditSection = () => {
   return (
     <div className="audit-container">
       <div className="audit-content">
-        <h1>INITIALIZE PERFORMANCE AUDIT</h1>
+        <h1>INITIALIZE PERFORMANCE GROWTH</h1>
 
         <p>
           Is your current infrastructure creating drag? Connect with our
-          engineers for a full systemic diagnostic and ROI projection.
+          team for a full systemic diagnostic and ROI projection.
         </p>
 
         <div className="audit-form">
@@ -19,13 +19,13 @@ const AuditSection = () => {
             placeholder="ENTER WORK EMAIL"
           />
 
-          <button>LAUNCH AUDIT</button>
+          <button>READY TO GROW</button>
         </div>
       </div>
 
       <div className="audit-footer">
         <div className="footer-left">
-          © 2024 GT APEX. ENGINEERED FOR PRECISION.
+          © 2026 GT APEX. ENGINEERED FOR PRECISION.
         </div>
 
         <div className="footer-right">

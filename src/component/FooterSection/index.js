@@ -63,7 +63,7 @@ const FooterSection = () => {
         <div className="footer-bottom"> 
           <div className='first-text-con'>
             <span className='first-bottom-text'>GT APEX</span>
-            <p>© 2024 GT APEX. ENGINEERED FOR PRECISION.</p>
+            <p>© 2026 GT APEX. ENGINEERED FOR PRECISION.</p>
           </div>
           <div className="footer-links">
             <span className='footer-middle-text'>PRIVACY POLICY</span>

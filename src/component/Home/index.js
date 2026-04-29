@@ -14,7 +14,13 @@ const Home = () => {
     <div className="home-container">
       {/* Navbar */}
       <Header />
-      <div className="bg-con">
+       <div className="bg-con">
+        <div className="hero-overlay">
+          <h1 className="hero-title animate-path">
+            WELLCOME TO <br className="mobile-break" />
+            GT APEX
+          </h1>
+        </div>
       </div>
       {/* Full Width Carousel */}
       <StatsCards />

@@ -2,7 +2,7 @@ import AuditSection from "../AuditSection"
 import Header from "../Header"
 import './index.css'
 
-const LandingPage = () => {
+const Services = () => {
   return (
     <div className="landing-container">
       {/* Hero Section */}
@@ -148,4 +148,4 @@ const LandingPage = () => {
   )
 }
 
-export default LandingPage
+export default Services

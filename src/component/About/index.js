@@ -1,6 +1,11 @@
+import Header from "../Header"
+
 const About =()=>{
     return (
-        <h1>Hi</h1>
+        <div>
+            <Header />
+            <h1>Hi</h1>
+        </div>
     )
 }
 export default About
