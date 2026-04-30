@@ -43,7 +43,8 @@
 
 .input-group label {
   color: #d4d4d4;
-  font-size: 14px;
+  font-size: 15px;
+  padding-left: 10px;
   letter-spacing: 2px;
   margin-bottom: 12px;
 }
