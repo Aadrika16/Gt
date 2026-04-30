@@ -1,39 +1,32 @@
-
 import './index.css'
 
 const RegisterForm = () => {
   return (
-    <div className="register-page">
-      <div className="register-card">
-        <h1 className="register-title">REGISTER NOW</h1>
-
-        <form className="register-form">
-          <div className="input-group">
-            <label>NAME</label>
-            <input type="text" placeholder="FULL NAME" />
-          </div>
-
-          <div className="input-group">
-            <label>EMAIL ADDRESS</label>
-            <input type="email" placeholder="EMAIL ADDRESS" />
-          </div>
-
-          <div className="input-group">
-            <label>MOBILE NUMBER</label>
-            <input type="text" placeholder="ENTER NUMBER" />
-          </div>
-
-          <div className="input-group">
-            <label>DESCRIPTION</label>
-            <textarea placeholder="DESCRIBE"></textarea>
-          </div>
-
-          <button type="submit" className="submit-btn">
-            REGISTER NOW
-          </button>
-        </form>
+    <form className="register-form">
+      <div className="input-group">
+        <label>Name</label>
+        <input type="text" placeholder="Enter Full Name" />
       </div>
-    </div>
+
+      <div className="input-group">
+        <label>Email Address</label>
+        <input type="email" placeholder="Enter Email" />
+      </div>
+
+      <div className="input-group">
+        <label>Mobile Number</label>
+        <input type="text" placeholder="Enter Mobile Number" />
+      </div>
+
+      <div className="input-group">
+        <label>Description</label>
+        <textarea placeholder="Describe Your Requirement"></textarea>
+      </div>
+
+      <button className="submit-btn" type="submit">
+        REGISTER NOW
+      </button>
+    </form>
   )
 }
 
