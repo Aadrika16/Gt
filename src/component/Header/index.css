@@ -189,6 +189,7 @@
   .register-top h2 {
     font-size: 24px;
     letter-spacing: 2px;
+  
   }
 }
 
@@ -208,5 +209,53 @@
   .register-top h2 {
     font-size: 18px;
     letter-spacing: 1px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .register-panel {
+    position: fixed;
+
+    top: 72px; /* same as header height */
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: calc(100vh - 72px);
+
+    max-width: 100%;
+
+    transform: translateY(100%);
+    border-radius: 24px 24px 0 0;
+
+    overflow-y: auto;
+    padding: 24px 18px;
+
+    background: #111;
+  }
+
+  .register-modal.show .register-panel {
+    transform: translateY(0);
+  }
+
+  .register-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+
+    background: #111;
+    z-index: 20;
+
+    padding-bottom: 14px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .register-panel {
+    top: 72px;
+    height: calc(100vh - 72px);
+    padding: 20px 16px;
   }
 }
