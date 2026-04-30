@@ -50,7 +50,7 @@
 /* Tablet */
 @media screen and (max-width: 992px) {
   .stats-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
