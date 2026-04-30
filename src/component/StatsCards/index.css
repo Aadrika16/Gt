@@ -8,7 +8,7 @@
 .stats-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 25px;
+  gap: 15px;
 }
 
 .stat-card {
@@ -17,7 +17,7 @@
   padding: 30px 20px;
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 9px;
   transition: 0.3s ease;
   border-radius: 10px;
   backdrop-filter: none;
