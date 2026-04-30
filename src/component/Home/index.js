@@ -17,7 +17,7 @@ const Home = () => {
        <div className="bg-con">
         <div className="hero-overlay">
           <h1 className="hero-title animate-path">
-            WELLCOME TO <br className="mobile-break" />
+            WELCOME TO <br className="mobile-break" />
             GT APEX
           </h1>
         </div>
