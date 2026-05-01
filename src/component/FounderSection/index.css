@@ -93,3 +93,42 @@
     font-size: 20px;
   }
 }
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 15px;
+}
+
+.icon-link {
+  font-size: 24px;
+  color: white;
+  background: rgba(255, 255, 255, 0.08);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.icon-link:hover {
+  transform: translateY(-4px) scale(1.1);
+}
+
+.linkedin:hover {
+  background-color: #0077b5;
+}
+
+.instagram:hover {
+  background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+  );
+}
