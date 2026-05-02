@@ -1,26 +1,14 @@
-/* HERO SECTION */
-.hero {
+/* LANDING PAGE */
+.landing-page {
   background: #0a0a0a;
   color: #fff;
   padding: 80px 6%;
-  font-family: "Poppins", sans-serif;
-}
-/* Remove default spacing */
-body,
-html {
-  margin: 0;
-  padding: 0;
 }
 
-/* Header fixed height compensation */
-.hero-section {
-  margin-top: 0;
-  padding-top: 90px; /* equal to navbar height */
-}
-/* Container */
-.hero-container {
+/* CONTAINER */
+.landing-image-container {
   display: flex;
-  align-items: center;       /* perfect vertical alignment */
+  align-items: center;
   justify-content: center;
   gap: 70px;
   max-width: 1300px;
@@ -28,28 +16,28 @@ html {
 }
 
 /* LEFT IMAGE */
-.hero-image {
+.landing-image {
   flex: 1;
   display: flex;
   justify-content: center;
 }
 
-.hero-image img {
+.landing-image img {
   width: 100%;
   max-width: 650px;
-  height: 420px;            /* fixed height for alignment */
+  height: 420px;
   object-fit: cover;
+
+  /* 🔥 IMPORTANT: hides unwanted right-side graphic */
+  object-position: left;
+
   border-radius: 8px;
-  display: block;
 }
 
 /* RIGHT CONTENT */
-.hero-content {
+.landing-content {
   flex: 1;
   max-width: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .tag {
@@ -59,14 +47,14 @@ html {
   margin-bottom: 18px;
 }
 
-.hero-content h1 {
+.landing-content h1 {
   font-size: 58px;
   line-height: 1.05;
   font-weight: 700;
   margin-bottom: 24px;
 }
 
-.hero-content h1 span {
+.landing-content h1 span {
   color: #00ff88;
 }
 
@@ -74,10 +62,7 @@ html {
   color: #bdbdbd;
   font-size: 16px;
   line-height: 1.8;
-  margin-bottom: 35px;
 }
-
-/* FEATURES */
 .features {
   display: flex;
   flex-direction: column;
@@ -90,12 +75,6 @@ html {
 
   gap: 14px;
 }
-
-.feature .icon {
-  font-size: 18px;
-  color: #00ff88;
-}
-
 .feature h4 {
   margin: 0;
   font-size: 14px;
@@ -108,83 +87,41 @@ html {
   color: #9f9f9f;
 }
 
+
 /* Tablet */
 @media screen and (max-width: 992px) {
-  .hero-container {
+  .landing-image-container {
     gap: 40px;
   }
 
-  .hero-content h1 {
+  .landing-content h1 {
     font-size: 42px;
   }
 
-  .hero-image img {
+  .landing-image img {
     height: 360px;
   }
 }
 
-/* Mobile 
-@media screen and (max-width: 768px) {
-  .hero-container {
-    flex-direction: column;
-    text-align: center;
-    gap: 35px;
-  }
-
-  .hero-content {
-    align-items: center;
-  }
-
-  .hero-content h1 {
-    font-size: 34px;
-  }
-
-  .hero-image img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-  }
-
-  .feature {
-    justify-content: center;
-    text-align: left;
-  }
-}
-  */
-
-/* Small Mobile */
-@media screen and (max-width: 480px) {
-  .hero-content h1 {
-    font-size: 28px;
-  }
-
-  .description {
-    font-size: 14px;
-  }
-}
 /* Mobile */
 @media screen and (max-width: 768px) {
-  .hero-container {
+  .landing-image-container {
     flex-direction: column;
     text-align: center;
-    gap: 35px;
   }
 
-  .hero-content {
-    align-items: center;
+  .landing-content {
     max-width: 100%;
   }
 
-  .hero-content h1 {
+  .landing-content h1 {
     font-size: 34px;
   }
 
-  .hero-image img {
+  .landing-image img {
     width: 100%;
     height: auto;
-    max-width: 100%;
   }
-
   .features {
     width: 100%;
     align-items: center;
@@ -207,5 +144,17 @@ html {
   .feature p {
     font-size: 12px;
     line-height: 1.5;
+  }
+
+}
+
+/* Small Mobile */
+@media screen and (max-width: 480px) {
+  .landing-content h1 {
+    font-size: 28px;
+  }
+
+  .description {
+    font-size: 14px;
   }
 }

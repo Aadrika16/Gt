@@ -1,38 +1,40 @@
 import Header from "../Header"
 import StatsCards from "../StatsCards"
+import HeroSection from "../HeroSection"
 import PitStopProtocol from "../PitStopProtocol"
 import LandingPage from "../LandingPage"
 import ServicesCards from "../ServicesCards"
 import FooterSection from "../FooterSection"
 import Pricing from "../Pricing"
 import FounderSection from "../FounderSection"
- 
-import './index.css'
 
+import './index.css'
 
 const Home = () => {
   return (
     <div className="home-container">
       {/* Navbar */}
       <Header />
-       <div className="bg-con">
-        <div className="hero-overlay">
-          <h1 className="hero-title animate-path">
-            WELCOME TO <br className="mobile-break" />
-            GT APEX
-          </h1>
+
+      {/* Hero Section with Background */}
+      <section className="hero-wrapper">
+        <div className="bg-con">
+          <div className="hero-overlay">
+            <HeroSection />
+          </div>
         </div>
-      </div>
-      {/* Full Width Carousel */}
+      </section>
+
+      {/* Other Sections */}
       <StatsCards />
+
       <LandingPage />
+
       <ServicesCards />
       <PitStopProtocol />
       <Pricing />
       <FounderSection />
-      {/* Footer Section */} 
       <FooterSection />
-      
     </div>
   )
 }

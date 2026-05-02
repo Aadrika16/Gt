@@ -1,21 +1,18 @@
-
 import "./index.css";
 
-const Hero = () => {
+const LandingPage = () => {
   return (
-    <section className="hero">
-      <div className="hero-container">
-        
-        {/* LEFT IMAGE */}
-        <div className="hero-image">
+    <section className="landing-page">
+      <div className="landing-image-container">
+
+        <div className="landing-image">
           <img
             src="https://res.cloudinary.com/doyaebals/image/upload/v1777292814/WhatsApp_Image_2026-04-27_at_5.54.48_PM_szf6jn.jpg"
             alt="Marketing Banner"
           />
         </div>
 
-        {/* RIGHT CONTENT */}
-        <div className="hero-content">
+        <div className="landing-content">
           <p className="tag">— STRATEGY & VISION</p>
 
           <h1>
@@ -29,7 +26,6 @@ const Hero = () => {
             is mapped to a grander vision, ensuring your brand isn't just
             present, but dominant in its space.
           </p>
-
           <div className="features">
             <div className="feature">
               <div>
@@ -47,9 +43,11 @@ const Hero = () => {
           </div>
 
         </div>
-      </div>
+        </div>
+
+      
     </section>
   );
 };
 
-export default Hero;
+export default LandingPage;

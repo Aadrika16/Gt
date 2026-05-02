@@ -13,7 +13,9 @@
 .pricing h2 span {
   color: #00ff88;
 }
-
+.right-icon{
+  color : #00ff88;
+}
 .sub-text {
   color: #aaa;
   margin: 10px 0 40px;

@@ -11,7 +11,8 @@ const plans = [
       "Monthly content calendar planning",
       "10-12 aesthetic grid posts / month",
       "4 reels per month",
-      "6-7 story uploads per week"
+      "6-7 story uploads per week",
+      "PodCasts"
     ],
     button: "SELECT STARTER",
     highlight: false
@@ -26,7 +27,8 @@ const plans = [
       "On-page SEO optimization",
       "2 influencer collaborations / month",
       "Professional video shoot / month",
-      "Email marketing (1 campaign / month)"
+      "Email marketing (1 campaign / month)",
+      "PodCasts"
     ],
     button: "SELECT GROWTH",
     highlight: true
@@ -41,7 +43,8 @@ const plans = [
       "Meta + Google + YouTube Ads",
       "LinkedIn page management",
       "Crisis communication support",
-      "Priority turnaround on creatives"
+      "Priority turnaround on creatives",
+      "PodCasts"
     ],
     button: "SELECT FULL 360",
     highlight: false
@@ -82,7 +85,7 @@ const Pricing = () => {
 
             <ul>
               {plan.features.map((f, index) => (
-                <li key={index}>✔ {f}</li>
+                <li key={index} className="right-icon">✔ {f}</li>
               ))}
             </ul>
 
