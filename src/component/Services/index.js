@@ -90,7 +90,7 @@ const Services = () => {
             <small>MODULE 03</small>
             <h3>WEBSITE DESIGN & DEVELOPMENT</h3>
             <p>
-              (UX/UI FOCUSED)
+              (UI/UX FOCUSED)
             </p>
 
             <ul>

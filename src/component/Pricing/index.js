@@ -6,6 +6,7 @@ const plans = [
     name: "BASIC",
     price: "Rs.35,000",
     subtitle: "PER MONTH (EXCL. GST)",
+    textType : "Everything in Basic",
     features: [
       "Social media management (Instagram + Facebook)",
       "Monthly content calendar planning",
@@ -21,8 +22,8 @@ const plans = [
     name: "MEDIUM",
     price: "Rs.55,000",
     subtitle: "PER MONTH (EXCL. GST)",
+    textType : "Everything in Medium",
     features: [
-      "Everything in Basic",
       "Google Ads management",
       "On-page SEO optimization",
       "2 influencer collaborations / month",
@@ -37,8 +38,8 @@ const plans = [
     name: "PREMIUM",
     price: "Rs.1,00,000",
     subtitle: "PER MONTH (EXCL. GST)",
+    textType : "Everything in Premium",
     features: [
-      "Everything in Medium",
       "Full 360° marketing strategy",
       "Meta + Google + YouTube Ads",
       "LinkedIn page management",
@@ -82,7 +83,7 @@ const Pricing = () => {
             <h4>{plan.name}</h4>
             <h3>{plan.price}</h3>
             <p className="subtitle">{plan.subtitle}</p>
-
+            <p className="text-type">{plan.textType}</p>
             <ul>
               {plan.features.map((f, index) => (
                 <li key={index} > <FaArrowRight className="right-icon" />  {f}</li>

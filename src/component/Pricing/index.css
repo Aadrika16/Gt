@@ -23,7 +23,9 @@
   color: #aaa;
   margin: 10px 0 40px;
 }
-
+.text-type{
+  color :#00cc66;
+}
 /* PLANS */
 .plans {
   display: flex;
