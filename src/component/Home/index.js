@@ -5,7 +5,6 @@ import PitStopProtocol from "../PitStopProtocol"
 import LandingPage from "../LandingPage"
 import ServicesCards from "../ServicesCards"
 import FooterSection from "../FooterSection"
-import Pricing from "../Pricing"
 import FounderSection from "../FounderSection"
 
 import './index.css'
@@ -32,7 +31,6 @@ const Home = () => {
 
       <ServicesCards />
       <PitStopProtocol />
-      <Pricing />
       <FounderSection />
       <FooterSection />
     </div>
