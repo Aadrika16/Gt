@@ -5,7 +5,7 @@ const founders = [
   {
     id: 1,
     name: 'YASHO KRISHNA DEV KOLA',
-    role: 'FOUNDER AND CEO',
+    role: 'FOUNDER & CEO',
     image:
       'https://res.cloudinary.com/doyaebals/image/upload/v1777555961/IMG_2261_1_1_rwy07z.svg',
     linkedin:
