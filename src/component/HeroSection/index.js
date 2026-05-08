@@ -48,9 +48,9 @@ const HeroSection = () => {
 
           <button
             className="btn secondary-btn"
-            onClick={() => history.push('/contact')}
+            onClick={() => history.push('/about')}
           >
-            Contact Us
+            About Us
           </button>
         </div>
       </div>
