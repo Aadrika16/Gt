@@ -25,7 +25,7 @@ const PopupModal = () => {
         {/* LEFT IMAGE */}
         <div className="popup-image-section">
           <img
-            src="https://res.cloudinary.com/doyaebals/image/upload/v1778230832/WhatsApp_Image_2026-05-08_at_2.24.57_PM_zatyqu.jpg"
+            src="https://res.cloudinary.com/doyaebals/image/upload/v1778328086/WhatsApp_Image_2026-05-09_at_5.29.05_PM_gdkued.jpg"
             alt="popup"
           />
         </div>

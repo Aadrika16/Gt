@@ -1,7 +1,7 @@
 import './index.css'
 import { useEffect, useState } from 'react'
 import { useHistory } from 'react-router-dom'
-
+import GlobeScene from "../GlobeScene3d/GlobeScene"
 const HeroSection = () => {
   const history = useHistory()
 
@@ -28,7 +28,7 @@ const HeroSection = () => {
   return (
     <section className="hero-container">
       <div className="overlay"></div>
-
+      <GlobeScene />
       <div className="hero-content">
         <p className="small-text fade-in">WELCOME TO</p>
 

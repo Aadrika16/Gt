@@ -8,34 +8,39 @@ import ServicesCards from "../ServicesCards"
 import FooterSection from "../FooterSection"
 import FounderSection from "../FounderSection"
 
-import './index.css'
+import "./index.css"
 
 const Home = () => {
   return (
     <div className="home-container">
-      {/* Navbar */}
-      <PopupModal />
-      <Header />
-      
 
-      {/* Hero Section with Background */}
+      <PopupModal />
+
+      <Header />
+
       <section className="hero-wrapper">
+
         <div className="bg-con">
+
           <div className="hero-overlay">
             <HeroSection />
           </div>
         </div>
+
       </section>
 
-      {/* Other Sections */}
       <StatsCards />
 
       <LandingPage />
 
       <ServicesCards />
+
       <PitStopProtocol />
+
       <FounderSection />
+
       <FooterSection />
+
     </div>
   )
 }

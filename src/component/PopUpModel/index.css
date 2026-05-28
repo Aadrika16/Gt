@@ -41,8 +41,8 @@
 /* ================= LEFT IMAGE ================= */
 
 .popup-image-section {
-  width: 42%;
-  min-height: 480px;
+  width: 50%;
+  min-height: 500px;
 
   animation: slideLeft 0.9s ease forwards;
 }

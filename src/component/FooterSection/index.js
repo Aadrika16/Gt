@@ -28,37 +28,37 @@ const FooterSection = () => {
               innovation.
             </p>
           </div>
-
-          {/* Expertise */}
+            {/* Expertise */}
+        <div className='footer-grid-1'>
           <div className="footer-column">
-            <h3>Expertise</h3>
-            <ul>
-              <li>360<sup>°</sup> Marketing</li>
-              <li>Strategy</li>
-              <li>Scalability</li>
-              <li>Sustainability</li>
-            </ul>
+              <h3>Expertise</h3>
+              <ul>
+                <li>360<sup>°</sup> Marketing</li>
+                <li>Strategy</li>
+                <li>Scalability</li>
+                <li>Sustainability</li>
+              </ul>
           </div>
 
-          {/* Company */}
+            {/* Company */}
           <div className="footer-column">
-            <h3>Company</h3>
-            <ul>
-              <li>Contact Us</li>
-              <li>Portfolio</li>
-            </ul>
+              <h3>Company</h3>
+              <ul>
+                <li>Contact Us</li>
+                <li>Portfolio</li>
+              </ul>
           </div>
 
-          {/* Legal */}
+            {/* Legal */}
           <div className="footer-column">
-            <h3>Legal</h3>
-            <ul>
-              <li>Privacy Policy</li>
-              <li>Terms of Service</li>
-            </ul>
+              <h3>Legal</h3>
+              <ul>
+                <li>Privacy Policy</li>
+                <li>Terms of Service</li>
+              </ul>
           </div>
         </div>
-
+      </div>
         {/* Bottom Footer */}
         <div className="footer-bottom"> 
           <div className='first-text-con'>
